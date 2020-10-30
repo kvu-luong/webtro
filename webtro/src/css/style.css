@@ -1,0 +1,94 @@
+body {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+  background: #f8f8f8;
+}
+
+.fixed-top, .fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+svg {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #fff;
+  height: 100px;
+  padding: 1.5rem 0;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.menu-button {
+  color: #8f8f8f;
+  width: 120px;
+  text-align: center;
+}
+.menu-button:hover {
+  color: #922c88;
+}
+.menu-button svg {
+  height: 12px;
+}
+.menu-button .main {
+  fill: #3a3a3a;
+  transition: fill 3s;
+  width: 10px;
+}
+.menu-button .sub {
+  fill: #3a3a3a;
+  transition: fill 3s;
+}
+
+.menu-button-mobile {
+  color: #8f8f8f;
+  text-align: center;
+  margin-left: 15px;
+}
+.menu-button-mobile svg {
+  height: 12px;
+  fill: #3a3a3a;
+}
+
+@media (min-width: 420px) {
+  .d-xs-block {
+    display: block !important;
+  }
+}
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
