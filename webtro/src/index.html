@@ -12,12 +12,113 @@
     <body>
         <header>
         	<section id="hor-head">
-        		Nav
+        		<nav>
+                    <div class="nav-right">
+                        <div>
+                            <a class="menu-button d-none d-md-block" href="/">
+                                <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                                    <rect x="0.48" y="0.5" width="7" height="1"></rect>
+                                    <rect x="0.48" y="7.5" width="7" height="1"></rect>
+                                    <rect x="0.48" y="15.5" width="7" height="1"></rect>
+                                </svg>
+                                <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                                    <rect x="1.56" y="0.5" width="16" height="1"></rect>
+                                    <rect x="1.56" y="7.5" width="16" height="1"></rect>
+                                    <rect x="1.56" y="15.5" width="16" height="1"></rect>
+                                </svg>
+                            </a>                    
+                        </div>
+                        <div>
+                            <button type="button" aria-haspopup="true" aria-expanded="false" class="language-button dropdown-toggle btn btn-light btn-sm"><span class="name">EN</span></button>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a aria-current="page" class="navbar-logo active" href="/app"><span class="logo d-none d-xs-block"></span><span class="logo-mobile d-block d-xs-none"></span></a>
+                    </div>
+                    <div class="nav-left">
+                        <div>
+                            <button id="tooltip_switch" type="button" role="switch" aria-checked="false" class="rc-switch custom-switch custom-switch-primary custom-switch-small"><span class="rc-switch-inner"></span></button>
+                        </div>
+                        <div class="dropdown-menu-right dropdown">
+                            <button type="button" aria-haspopup="true" aria-expanded="false" class="header-icon btn btn-empty">
+                                <i class="simple-icon-grid"></i>
+                            </button>
+                            <div tabindex="-1" role="menu" id="iconMenuDropdown" aria-hidden="true" class="position-absolute mt-3 dropdown-menu dropdown-menu-right">
+                                <a aria-current="page" class="icon-menu-item active" href="/app/dashboards/default">
+                                <i class="iconsminds-shop-4 d-block"></i> Dashboards</a>
+                                <a class="icon-menu-item" href="/app/ui"><i class="iconsminds-pantone d-block"></i> UI</a>
+                                <a class="icon-menu-item" href="/app/ui/charts"><i class="iconsminds-bar-chart-4 d-block"></i> Charts</a>
+                                <a class="icon-menu-item" href="/app/applications/chat"><i class="iconsminds-speach-bubble d-block"></i> Chat</a>
+                                <a class="icon-menu-item" href="/app/applications/survey"><i class="iconsminds-formula d-block"></i> Survey</a>
+                                <a class="icon-menu-item" href="/app/applications/todo"><i class="iconsminds-check d-block"></i> To-do List</a>
+                            </div>
+                         </div>
+                        <div>
+                            <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="fullScreenButton">
+                                <i class="simple-icon-size-fullscreen d-block"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <div class="dropdown-menu-right dropdown">
+                                <button>
+                                    <span class="name">KVU</span>
+                                    <span>
+                                        <img src="" alt="Profile">
+                                    </span>
+                                </button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                    <button tabindex="0" role="menuitem" class="dropdown-item">Account</button>
+                                    <button tabindex="0" role="menuitem" class="dropdown-item">Features</button>
+                                    <button tabindex="0" role ="menuitem" class="dropdown-item">History</button>
+                                    <div tabindex="-1" class="dropdown-driver"></div>
+                                    <button tabindex="0" role="menuitem" class="dropdown-item">Sign out</button>
+                                </div>
+                            </div>
+                        </div>
+                </nav>
         	</section>
-        	<section id="ver-head">
-        		Side bar
-        	</section>
+        	
         </header>
+        <section id="ver-head">
+             <div class="main-menu">
+                <div class="scroll">
+                    <div class="scrollbar-container">
+                        <ul class="list-unstyled nav">
+                            <li class="active nav-item">
+                                <a aria-current="page" class="active" data-flag="dashboards" href="">Trang chủ</a>
+                            </li>
+                             <li class="active nav-item">
+                                <a aria-current="page" class="active" data-flag="dashboards" href="">Phòng</a>
+                            </li>
+                             <li class="active nav-item">
+                                <a aria-current="page" class="active" data-flag="dashboards" href="">Hóa đơn</a>
+                            </li>
+                             <li class="active nav-item">
+                                <a aria-current="page" class="active" data-flag="dashboards" href="">Cài đặt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="sub-menu">
+                <div class="scroll">
+                    <ul data-parent="dashboards" class="d-block nav">
+                        <li class="nav-item active">
+                            <a aria-current="page" class="active" href="#">
+                                <i class="simple-icon-briefcase"></i>Phòng Trống</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a aria-current="page" class="active" href="#">
+                                <i class="simple-icon-briefcase"></i>Phòng Đang Dùng</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a aria-current="page" class="active" href="#">
+                                <i class="simple-icon-briefcase"></i>Khu vực</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </section>
         <main>
         	-card: phòng trống, phòng đang dùng, khu vực
         	-thu nhap: Tháng/quý/ năm từng khu vực - cột/đường, tỷ giá
