@@ -13,7 +13,7 @@
         <header>
         	<section id="hor-head">
         		<nav class="navbar fixed-top">
-                    <div class="nav-right">
+                    <div class="nav-left d-flex align-items-center">
                         <div>
                             <a class="menu-button d-none d-md-block" href="/">
                                 <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
@@ -35,10 +35,17 @@
                                 </svg>
                             </a>                    
                         </div>
-                        <div>
-                            <button type="button" aria-haspopup="true" aria-expanded="false" class="language-button dropdown-toggle btn btn-light btn-sm">
-                                <span class="name">EN</span>
-                            </button>
+                        <div class="d-inline-block">
+                            <div class="dropdown">
+                                <button aria-haspopup="true" aria-expanded="false" 
+                                        class="language-button dropdown-toggle btn btn-light btn-sm">
+                                    <span class="name">EN</span>
+                                </button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="mt-3 dropdown-menu dropdown-menu-right">
+                                    <button type="button" tabindex="0" role="menuitem" class="dropdown-item">VN</button>
+                                    <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Korean</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="logo">
