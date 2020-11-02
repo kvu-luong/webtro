@@ -53,6 +53,10 @@ button {
   vertical-align: middle !important;
 }
 
+.position-absolute {
+  position: absolute !important;
+}
+
 [type=button]:not(:disabled), [type=reset]:not(:disabled),
 [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
@@ -180,6 +184,15 @@ button {
   border-radius: 30px;
   width: 40px;
 }
+.navbar #iconMenuDropdown {
+  width: 240px;
+  padding: 1.5rem !important;
+  height: 280px;
+}
+
+.nav-right {
+  display: flex;
+}
 
 .nav-logo {
   width: 110px;
@@ -301,6 +314,27 @@ button {
   padding: 0.6rem 1rem;
   border: initial;
   outline: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 10px;
+  z-index: 4;
+  height: calc(100% - 100px);
+  transition: border-radius 0.3s;
+}
+.sidebar .main-menu {
+  width: 120px;
+  height: calc(100% - 100px);
+  background: #fff;
+  z-index: 3;
+  position: fixed;
+  transition: transform 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 0;
 }
 
 @media (min-width: 420px) {

@@ -45,6 +45,9 @@ button{
 .align-middle{
 	vertical-align: middle !important;
 }
+.position-absolute{
+	position: absolute !important;
+}
 //-----------------------------------
 //button
 [type=button]:not(:disabled), [type=reset]:not(:disabled),
@@ -166,6 +169,15 @@ button{
 			width: 40px;
 		}
 	}
+
+	#iconMenuDropdown{
+		width: 240px;
+		padding: 1.5rem !important;
+		height: 280px;
+	}
+}
+.nav-right{
+	display: flex;
 }
 .nav-logo{
 	width: 110px;
@@ -286,6 +298,28 @@ button{
 	outline: none;
 }
 //------------------------------
+//side bar
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	padding-top: 10px;
+	z-index: 4;
+	height: calc(100% - 100px);
+	transition: border-radius .3s;
+
+	.main-menu{
+		width: 120px;
+		height: calc(100% - 100px);
+		background: #fff;
+		z-index: 3;
+		position: fixed;
+		transition: transform .3s;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		left: 0;
+	}
+}
 @media (min-width: 420px){
 	.d-xs-block{
 		display: block !important;
